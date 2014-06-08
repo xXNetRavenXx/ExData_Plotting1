@@ -21,3 +21,5 @@ with(EnergyUsageDay,{
     
     plot(EnergyUsageDay$Time,EnergyUsageDay$Global_reactive_power,type = "l",ylab = "Global_reactive_power",xlab="")
 } )
+dev.copy(png, file = "../ExData_Plotting1/plot4.png")
+dev.off()

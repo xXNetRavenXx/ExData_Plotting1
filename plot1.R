@@ -11,3 +11,6 @@ EnergyUsageDay <- EnergyUsage[EnergyUsage$Date == "2007-02-01" | EnergyUsage$Dat
 
 hist(EnergyUsageDay$Global_active_power, col = "red",xlab = "Global Active Power (kilowatts)"
      , ylab= "Frequency",ylim=c(0,1300),main ="Global Active Power")
+
+dev.copy(png, file = "../ExData_Plotting1/plot1.png")
+dev.off()
